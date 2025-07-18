@@ -9,6 +9,8 @@ import plantIcon from "./assets/plant-icon.svg";
 import sunIcon from "./assets/sun-icon.svg";
 import waterIcon from "./assets/water-icon.svg";
 import temperatureIcon from "./assets/temperature-icon.svg";
+import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
+
 
 export const heroTitle = "Bring Serenity to Your Place With Interior Plants";
 export const heroSubtitle =
@@ -16,72 +18,72 @@ export const heroSubtitle =
 
 export const services = [
   {
-    title: "Free Shipping",
-    subtitle: "No charge for your delivery",
+    title: "Personalized Space Transformation",
+    subtitle: "Transform. Your. Space.",
     icon: shippingIcon,
   },
   {
-    title: "Quick Payment",
-    subtitle: "100% secure",
+    title: "Harmonious Design & Functionality",
+    subtitle: "Beauty. Function. Harmony",
     icon: paymentIcon,
   },
   {
-    title: "24/7 Support",
-    subtitle: "Don't hesitate to contact us",
+    title: "Seamless Project Management",
+    subtitle: "Concept. To. Completion.",
     icon: supportIcon,
   },
 ];
 
-export const productsTitle = "Best Selling Products";
-export const productsBtnText = "See Colection";
+export const productsTitle = "About Us";
+export const productsBtnText = "about us";
 
 export const products = [
   {
-    title: "Golden Pothos",
-    price: "$65.99",
+    title: "Our inspiring journey",
+    price: "Passion. Precision. Transformation.",
     img: productOneIcon,
   },
   {
-    title: "Rubber Plant",
-    price: "$75.00",
+    title: "Our Design Philosophy",
+    price: "Beauty. Function. Soul.",
     img: productTwoIcon,
   },
   {
-    title: "Cast Iron Plant",
-    price: "$88.50",
+    title: "Dedicated to Your Vision",
+    price: "Your Vision. Our Craftsmanship.",
     img: productThreeIcon,
   },
 ];
 
-export const referenceTitle = "Interior Plants Reference";
-export const referenceSubtitle = "make your home cozy with refreshing plants";
+export const referenceTitle = "Design for Cozy Living.";
+export const referenceSubtitle = "Transform your space into a cozy, refreshing haven.";
 
-export const careTitle = "How to care for plants";
-export const careSubtitle = "Take care of plants with all your heart";
+export const careTitle = "How to Care for Your Interior";
+export const careSubtitle = "Maintain your design with care.";
 
 export const careList = [
   {
-    title: "Adjust Lighting",
+    title: "Optimize Lighting",
     subtitle:
-      "When caring for houseplants, make sure the room temperature is neither too cold nor too hot.",
+      "Ensure your space utilizes natural light effectively and has balanced artificial lighting for every mood.",
     img: sunIcon,
   },
   {
-    title: "Don't water too often",
+    title: "Declutter Thoughtfully",
     subtitle:
-      "Watering ornamental houseplants does not have to be done every day.",
+      "Regularly assess and remove unnecessary items to maintain clear, serene, and functional living areas.",
     img: waterIcon,
   },
   {
-    title: "Choose the right container.",
+    title: "Select Right Pieces",
     subtitle:
-      "Houseplants will need different containers depending on their type and size.",
+      "Choose furniture and decor that perfectly fit the scale, purpose, and aesthetic of each room.",
     img: plantIcon,
   },
   {
-    title: "Fertilize regularly",
+    title: "Refresh Regularly",
     subtitle:
-      "The nutrients most indoor houseplants need are nitrogen for balance and potassium for stem strength.",
+      "Periodically update accents, textiles, or art to keep your design vibrant and reflective of current tastes.",
     img: temperatureIcon,
   },
 ];
@@ -105,10 +107,23 @@ export const footerLinksColumnTwo = [
     links: ["Best Product", "Categories"],
   },
   {
-    title: "Address",
+    title: "Follow Us",
     links: [
-      "JL. Setiabudhi No. 193 Sukasari, Bandung West Java, Indonesia",
-      "hallo@daunku.com",
+      {
+        label: "Instagram",
+        url: "https://instagram.com/yourprofile",
+        icon: FaInstagram,
+      },
+      {
+        label: "Facebook",
+        url: "https://facebook.com/yourprofile",
+        icon: FaFacebookF,
+      },
+      {
+        label: "Twitter",
+        url: "https://twitter.com/yourprofile",
+        icon: FaTwitter,
+      },
     ],
   },
 ];

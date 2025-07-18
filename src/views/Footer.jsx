@@ -31,6 +31,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-12 w-full">
+            {/* Column One */}
             <div className="flex flex-col xs:flex-row gap-12 w-full md:w-auto">
               {footerLinksColumnOne.map((item, index) => (
                 <div
@@ -56,6 +57,7 @@ const Footer = () => {
               ))}
             </div>
 
+            {/* Column Two */}
             <div className="flex flex-col xs:flex-row gap-12 w-full md:w-auto">
               {footerLinksColumnTwo.map((item, index) => (
                 <div
@@ -66,20 +68,46 @@ const Footer = () => {
                     {item.title}
                   </h6>
                   <ul className="flex flex-col gap-4">
-                    {item.links.map((link, i) => (
-                      <div
-                        key={`list-item-${i}`}
-                        className="w-full flex mx-auto justify-center xl:justify-start"
-                      >
-                        <li
-                          className={`font-medium text-sm md:text-base ${
-                            index !== 1 && "cursor-pointer"
-                          } text-center xl:text-start w-fit`}
+                    {item.links.map((link, i) => {
+                      // Handle social media icon links
+                      if (typeof link === "object" && link.icon) {
+                        const Icon = link.icon;
+                        return (
+                          <div
+                            key={`social-link-${i}`}
+                            className="w-full flex mx-auto justify-center xl:justify-start"
+                          >
+                            <li className="flex items-center gap-2 text-white text-sm md:text-base">
+                              <Icon className="text-lg hover:text-blue-400 transition-colors" />
+                              <a
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                              >
+                                {link.label}
+                              </a>
+                            </li>
+                          </div>
+                        );
+                      }
+
+                      // Fallback for normal text links
+                      return (
+                        <div
+                          key={`list-item-${i}`}
+                          className="w-full flex mx-auto justify-center xl:justify-start"
                         >
-                          {link}
-                        </li>
-                      </div>
-                    ))}
+                          <li
+                            className={`font-medium text-sm md:text-base ${
+                              index !== 1 && "cursor-pointer"
+                            } text-center xl:text-start w-fit`}
+                          >
+                            {link}
+                          </li>
+                        </div>
+                      );
+                    })}
                   </ul>
                 </div>
               ))}
@@ -90,7 +118,7 @@ const Footer = () => {
         <div className="w-full h-[1px] bg-white my-12" />
 
         <h6 className="text-white text-center text-base lg:text-lg">
-          &copy; Daunku - All rights reserved
+          &copy; Aesthetic - All rights reserved
         </h6>
       </div>
     </div>

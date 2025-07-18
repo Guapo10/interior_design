@@ -3,7 +3,7 @@ import { useState } from "react";
 
 // local imports
 import heroImage from "../assets/hero-image.svg";
-import logo from "../assets/logo.svg";
+// import logo from "../assets/logo.svg";
 import cartIcon from "../assets/cart-icon.svg";
 import searchIcon from "../assets/search-icon.svg";
 
@@ -33,20 +33,20 @@ const Hero = () => {
         className="relative w-full max-w-[1490px] flex 
         items-center justify-between pt-10 mx-auto px-10"
       >
-        <img src={logo} alt="" />
+        {/* <img src={logo} alt="" /> */}
         <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]">
-          <NavLink to="services">Services</NavLink>
-          <NavLink to="products">Shop</NavLink>
-          <NavLink to="reference">Reference</NavLink>
-          <NavLink to="care">Care</NavLink>
+          <NavLink to="services">Home</NavLink>
+          <NavLink to="products">Services</NavLink>
+          <NavLink to="reference">About US</NavLink>
+          <NavLink to="care">Contact</NavLink>
         </ul>
-
+{/* 
         <img src={cartIcon} className="hidden md:block cursor-pointer" alt="" />
         <HiMenuAlt3
           size={30}
           className="block md:hidden cursor-pointer text-white"
           onClick={() => setShowMobileMenu((prev) => !prev)}
-        />
+        /> */}
 
         <div
           className={`block md:hidden w-full fixed ${

@@ -2,7 +2,7 @@
 import { productsTitle, productsBtnText, products } from "../data";
 
 import arrowIcon from "../assets/arrow-icon.svg";
-import starsIcon from "../assets/stars-icon.svg";
+// import starsIcon from "../assets/stars-icon.svg";
 import plusIcon from "../assets/plus-icon.svg";
 
 import FadeIn from "../components/FadeIn";
@@ -46,9 +46,9 @@ const Products = () => {
                   <h2 className="mb-2 text-fontBlack text-3xl lg:text-[32px] font-medium">
                     {product.title}
                   </h2>
-                  <img src={starsIcon} alt="" />
+                  {/* <img src={starsIcon} alt="" /> */}
                 </div>
-                <div className="flex justify-between items-center">
+                {/* <div className="flex justify-between items-center"> */}
                   <h3 className="text-fontBlack text-2xl lg:text-3xl font-medium">
                     {product.price}
                   </h3>
@@ -59,7 +59,7 @@ const Products = () => {
                   />
                 </div>
               </div>
-            </div>
+            {/* </div> */}
           </FadeIn>
         ))}
       </div>
