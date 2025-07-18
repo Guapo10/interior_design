@@ -13,7 +13,7 @@ import FadeIn from "../components/FadeIn";
 import NavLink from "../components/NavLink";
 
 // react icons
-import { HiMenuAlt3 } from "react-icons/hi";
+// import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Hero = () => {
